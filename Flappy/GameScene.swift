@@ -202,7 +202,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
         if(moving.speed > 0){
             
-            bird.texture = SKTexture(imageNamed: "Bacon")
+            
             
             if(( contact.bodyA.categoryBitMask & scoreCategory ) == scoreCategory || ( contact.bodyB.categoryBitMask & scoreCategory ) == scoreCategory ) {
                 
