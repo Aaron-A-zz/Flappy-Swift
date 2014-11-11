@@ -15,10 +15,11 @@
 		21740F531A124AF5003971BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21740F521A124AF5003971BE /* Images.xcassets */; };
 		21740F561A124AF5003971BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21740F541A124AF5003971BE /* LaunchScreen.xib */; };
 		21740F621A124AF5003971BE /* FlappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21740F611A124AF5003971BE /* FlappyTests.swift */; };
-		21740F6F1A124B58003971BE /* bird-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F6B1A124B58003971BE /* bird-01.png */; };
 		21740F701A124B58003971BE /* pipeup.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F6C1A124B58003971BE /* pipeup.png */; };
 		21740F711A124B58003971BE /* pipedown.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F6D1A124B58003971BE /* pipedown.png */; };
 		21740F721A124B58003971BE /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F6E1A124B58003971BE /* ground.png */; };
+		21740F741A1259E8003971BE /* bird-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F731A1259E8003971BE /* bird-01.png */; };
+		21740F761A126C77003971BE /* bird-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F751A126C77003971BE /* bird-02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +45,11 @@
 		21740F5B1A124AF5003971BE /* FlappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21740F601A124AF5003971BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21740F611A124AF5003971BE /* FlappyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyTests.swift; sourceTree = "<group>"; };
-		21740F6B1A124B58003971BE /* bird-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-01.png"; sourceTree = "<group>"; };
 		21740F6C1A124B58003971BE /* pipeup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipeup.png; sourceTree = "<group>"; };
 		21740F6D1A124B58003971BE /* pipedown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipedown.png; sourceTree = "<group>"; };
 		21740F6E1A124B58003971BE /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		21740F731A1259E8003971BE /* bird-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-01.png"; sourceTree = "<group>"; };
+		21740F751A126C77003971BE /* bird-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-02.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 		21740F451A124AF5003971BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				21740F6B1A124B58003971BE /* bird-01.png */,
+				21740F751A126C77003971BE /* bird-02.png */,
+				21740F731A1259E8003971BE /* bird-01.png */,
 				21740F6C1A124B58003971BE /* pipeup.png */,
 				21740F6D1A124B58003971BE /* pipedown.png */,
 				21740F6E1A124B58003971BE /* ground.png */,
@@ -211,11 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				21740F561A124AF5003971BE /* LaunchScreen.xib in Resources */,
+				21740F761A126C77003971BE /* bird-02.png in Resources */,
 				21740F531A124AF5003971BE /* Images.xcassets in Resources */,
 				21740F701A124B58003971BE /* pipeup.png in Resources */,
 				21740F711A124B58003971BE /* pipedown.png in Resources */,
 				21740F721A124B58003971BE /* ground.png in Resources */,
-				21740F6F1A124B58003971BE /* bird-01.png in Resources */,
+				21740F741A1259E8003971BE /* bird-01.png in Resources */,
 				21740F4A1A124AF5003971BE /* GameScene.sks in Resources */,
 				21740F511A124AF5003971BE /* Main.storyboard in Resources */,
 			);
@@ -429,6 +433,7 @@
 				21740F671A124AF6003971BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21740F681A124AF6003971BE /* Build configuration list for PBXNativeTarget "FlappyTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				21740F6A1A124AF6003971BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
