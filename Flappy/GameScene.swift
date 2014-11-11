@@ -202,6 +202,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBeginContact(contact: SKPhysicsContact) {
         if(moving.speed > 0){
             
+            bird.texture = SKTexture(imageNamed: "Bacon")
+            
             if(( contact.bodyA.categoryBitMask & scoreCategory ) == scoreCategory || ( contact.bodyB.categoryBitMask & scoreCategory ) == scoreCategory ) {
                 
                 
@@ -213,7 +215,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 scoreLabelNode.runAction(SKAction.sequence([SKAction.scaleTo(1.5, duration: NSTimeInterval(0.1)),SKAction.scaleTo(1, duration: NSTimeInterval(0.1))]));
             }
             else {
-                
+                bird.texture = SKTexture(imageNamed: "Bacon")
                 moving.speed = 0;
                 bird.physicsBody?.collisionBitMask = worldCategory | pipeCategory;
                 bird.runAction(SKAction.rotateByAngle(CGFloat(M_PI)*CGFloat(bird.position.y)*0.01, duration:1), completion:{self.bird.speed = 0})

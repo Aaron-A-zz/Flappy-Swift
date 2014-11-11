@@ -20,6 +20,7 @@
 		21740F721A124B58003971BE /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F6E1A124B58003971BE /* ground.png */; };
 		21740F741A1259E8003971BE /* bird-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F731A1259E8003971BE /* bird-01.png */; };
 		21740F761A126C77003971BE /* bird-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F751A126C77003971BE /* bird-02.png */; };
+		21740F781A12781B003971BE /* Bacon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21740F771A12781B003971BE /* Bacon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		21740F6E1A124B58003971BE /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
 		21740F731A1259E8003971BE /* bird-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-01.png"; sourceTree = "<group>"; };
 		21740F751A126C77003971BE /* bird-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-02.png"; sourceTree = "<group>"; };
+		21740F771A12781B003971BE /* Bacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bacon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				21740F751A126C77003971BE /* bird-02.png */,
 				21740F731A1259E8003971BE /* bird-01.png */,
 				21740F6C1A124B58003971BE /* pipeup.png */,
+				21740F771A12781B003971BE /* Bacon.png */,
 				21740F6D1A124B58003971BE /* pipedown.png */,
 				21740F6E1A124B58003971BE /* ground.png */,
 				21740F461A124AF5003971BE /* Info.plist */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21740F561A124AF5003971BE /* LaunchScreen.xib in Resources */,
+				21740F781A12781B003971BE /* Bacon.png in Resources */,
 				21740F761A126C77003971BE /* bird-02.png in Resources */,
 				21740F531A124AF5003971BE /* Images.xcassets in Resources */,
 				21740F701A124B58003971BE /* pipeup.png in Resources */,
