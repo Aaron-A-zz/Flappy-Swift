@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214FEA341A12E75900FBDA2A /* swoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 214FEA331A12E75900FBDA2A /* swoosh.wav */; };
+		214FEA381A12EF5A00FBDA2A /* Dancefloor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 214FEA371A12EF5A00FBDA2A /* Dancefloor.wav */; };
 		21740F481A124AF5003971BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21740F471A124AF5003971BE /* AppDelegate.swift */; };
 		21740F4A1A124AF5003971BE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 21740F491A124AF5003971BE /* GameScene.sks */; };
 		21740F4C1A124AF5003971BE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21740F4B1A124AF5003971BE /* GameScene.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		214FEA331A12E75900FBDA2A /* swoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swoosh.wav; sourceTree = "<group>"; };
+		214FEA371A12EF5A00FBDA2A /* Dancefloor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Dancefloor.wav; sourceTree = "<group>"; };
 		21740F421A124AF5003971BE /* Flappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21740F461A124AF5003971BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21740F471A124AF5003971BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		21740F451A124AF5003971BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				214FEA371A12EF5A00FBDA2A /* Dancefloor.wav */,
+				214FEA331A12E75900FBDA2A /* swoosh.wav */,
 				21740F751A126C77003971BE /* bird-02.png */,
 				21740F731A1259E8003971BE /* bird-01.png */,
 				21740F6C1A124B58003971BE /* pipeup.png */,
@@ -223,6 +229,8 @@
 				21740F701A124B58003971BE /* pipeup.png in Resources */,
 				21740F711A124B58003971BE /* pipedown.png in Resources */,
 				21740F721A124B58003971BE /* ground.png in Resources */,
+				214FEA381A12EF5A00FBDA2A /* Dancefloor.wav in Resources */,
+				214FEA341A12E75900FBDA2A /* swoosh.wav in Resources */,
 				21740F741A1259E8003971BE /* bird-01.png in Resources */,
 				21740F4A1A124AF5003971BE /* GameScene.sks in Resources */,
 				21740F511A124AF5003971BE /* Main.storyboard in Resources */,

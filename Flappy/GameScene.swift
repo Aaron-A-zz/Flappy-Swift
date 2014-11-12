@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
@@ -31,9 +32,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let pipeCategory:UInt32 = 1<<2
     let scoreCategory:UInt32 = 1<<3
     
+    var audioPlayer = AVAudioPlayer()
+    
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        
+       
         
         reset = false
         
@@ -48,7 +53,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         pipes = SKNode()
         moving.addChild(pipes)
         
-        var birdTexture = SKTexture(imageNamed: "bird-02")
+        var birdTexture = SKTexture(imageNamed: "bird-01")
         birdTexture.filteringMode = SKTextureFilteringMode.Nearest
     
         
@@ -70,6 +75,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         groundTexture.filteringMode = SKTextureFilteringMode.Nearest
         
         moveGround()
+      
         
         for var i:CGFloat = 0; i<2.0 + self.frame.size.width/(groundTexture.size().width*2.0); i++ {
             sprite = SKSpriteNode(texture: groundTexture);
@@ -180,12 +186,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         /* Called when a touch begins */
-        
+        flapsound()
         
         if(moving.speed > 0){
             for touch: AnyObject in touches {
                 let location = touch.locationInNode(self)
-                bird.texture = SKTexture(imageNamed: "bird-01")
+                bird.texture = SKTexture(imageNamed: "bird-02")
                 bird.physicsBody?.velocity = CGVectorMake(0, 0);
                 bird.physicsBody?.applyImpulse(CGVectorMake(0, 25))
                 
@@ -196,7 +202,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        bird.texture = SKTexture(imageNamed: "bird-02")
+        bird.texture = SKTexture(imageNamed: "bird-01")
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
@@ -208,7 +214,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 
                 
                 score++;
-                print("anıl \(score)");
+                //print("anıl \(score)");
                 scoreLabelNode.text = String(score)
                 
                 
@@ -250,4 +256,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
 
     }
+    
+    
+    func flapsound() {
+        
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("swoosh", ofType: "wav")!)
+        println(alertSound)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.volume = 2.0
+        
+    
+        
+    }
+    
 }

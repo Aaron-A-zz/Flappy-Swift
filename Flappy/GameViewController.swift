@@ -8,6 +8,9 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
+
+var audioPlayer = AVAudioPlayer()
 
 extension SKNode {
     class func unarchiveFromFile(file : NSString) -> SKNode? {
@@ -30,6 +33,8 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+           gameSound()
+          
         if let scene = GameScene.unarchiveFromFile("GameScene") as? GameScene {
             // Configure the view.
             let skView = self.view as SKView
@@ -45,6 +50,21 @@ class GameViewController: UIViewController {
             skView.presentScene(scene)
         }
     }
+    
+    func gameSound() {
+        
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Dancefloor", ofType: "wav")!)
+        println(alertSound)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        audioPlayer.numberOfLoops = -1
+        audioPlayer.volume = 0.4
+        
+    }
+
     
     override func shouldAutorotate() -> Bool {
         return true
