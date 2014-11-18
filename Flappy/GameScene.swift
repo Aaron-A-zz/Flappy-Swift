@@ -45,8 +45,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.gravity = CGVectorMake(0.0, -5.0)
         self.physicsWorld.contactDelegate = self
         
-        skyColor = SKColor(red: 81.0/255.0, green: 192.0/255.0, blue: 201.0/255.0, alpha: 1.0)
-        self.backgroundColor = skyColor
+        skyColor = SKColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+        self.backgroundColor = UIColor .blackColor()
         
         moving = SKNode()
         self.addChild(moving)
@@ -117,7 +117,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         //Score
         score = 0
-        scoreLabelNode = SKLabelNode(fontNamed: "Calibri")
+        scoreLabelNode = SKLabelNode(fontNamed: "Helvetica Neue Light")
         scoreLabelNode.position = CGPointMake(CGRectGetMidX(self.frame), 3*self.frame.size.height/4 + 100)
         scoreLabelNode.zPosition = 50
         scoreLabelNode.text = String(score)

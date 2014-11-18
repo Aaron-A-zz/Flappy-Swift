@@ -30,6 +30,9 @@ extension SKNode {
 
 class GameViewController: UIViewController {
     
+    @IBOutlet weak var startButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
